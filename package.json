@@ -2,6 +2,7 @@
   "name": "sample",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://allenhaison.github.io/sample/",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.2",
     "@testing-library/jest-dom": "^5.17.0",
@@ -18,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "preload": "npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
