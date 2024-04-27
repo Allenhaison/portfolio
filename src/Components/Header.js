@@ -13,7 +13,7 @@ function Header() {
         <a href="https://www.linkedin.com">
           <i className="fab fa-linkedin">  linkedin</i> 
         </a>&nbsp; &nbsp;
-        <a href="https://www.linkedin.com">
+        <a href="https://github.com/Allenhaison">
           <i className="fab fa-github">  Github</i> 
         </a>
         
