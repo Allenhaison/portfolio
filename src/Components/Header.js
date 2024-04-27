@@ -7,7 +7,7 @@ function Header() {
     <div className="header">
       
       <div className="social-icons">
-        <a href="https://www.instagram.com">
+        <a href="https://www.linkedin.com">
           <i className="fab fa-instagram">  instagram</i> 
         </a>&nbsp; &nbsp;
         <a href="https://www.linkedin.com">
