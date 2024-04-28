@@ -381,7 +381,7 @@ color: white;
       position:absolute;
       height: 200px;
       width:200px;
-      margin-left: 6.1rem;
+      margin-left: 6rem;
       margin-top: 1rem;
       margin-bottom: 5rem;
     }
@@ -558,7 +558,7 @@ color: white;
   color:rgb(209, 207, 207); 
   align-items: center;
   margin-bottom: .9rem;
-  margin-right: 1rem;
+  margin-right: .5rem;
   
   
 }
@@ -566,7 +566,7 @@ color: white;
   padding: .9rem;
     color:rgb(209, 207, 207); 
     text-align: center;
-    margin-left: 2rem;
+    margin-left: 1.9rem;
     
     
   }
