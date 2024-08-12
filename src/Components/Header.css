@@ -1,360 +1,415 @@
 /* Header.css */
-
+html{
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+.Content{
+  scroll-snap-align: center;
+}
+.project{
+  scroll-snap-align: center;
+}
 .header {
-    display: flex;
-    justify-content: space-between;
-    
-    padding: 20px;
-    background-color: #333;
-   
-   
-  }
-  
-  .social-icons a i {
-    font-size: small;
-    color: rgb(151, 147, 147);
-    text-decoration: none;
-    margin-left: 10px;
-  }
-  
-  
-  .social-icons i:hover {
-    transition: transform 0.3s ease;
-    transform: scale(1.1);
-    color: lightgray;
-  }
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #333;
+ 
+ 
+}
+.social-icons i{
+  font-size: 1.5rem;
+  color: rgb(151, 147, 147);
+  text-decoration: none;
+  margin-left: 2rem;
+}
 
-h1:hover{
-  transform: scale(1.05); /* Scale up the text slightly on hover */
+.social-icons  {
+
+  display: flex;
+  flex-direction:row;
   
+  margin-top: 2.5rem;
+  margin-left: 8rem;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+
+
+.social-icons i:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+  color: lightgray;
+}
+.slide h5{
+  display: inline-block;
+  margin-bottom: 16rem;
+  position: absolute;
+  font-family: sans-serif;
+  overflow: hidden;
+  
+  font-size: 50vh;
+  bottom: -55vh;
+  font-weight: 5rem;
+  white-space: nowrap;
+opacity: 00.1;
+color: rgba(0, 0, 0, 0.226);
+animation: fade 24s linear infinite alternate-reverse ;
+
+  
+  
+}
+h1:hover{
+transform: scale(1.05); /* Scale up the text slightly on hover */
+
 }
 h2:hover{
-  transform: scale(1.05); /* Scale up the text slightly on hover */
-  
+transform: scale(1.05); /* Scale up the text slightly on hover */
+
 }
 p:hover{
-  transform: scale(1.05); /* Scale up the text slightly on hover */
-  
+transform: scale(1.05); /* Scale up the text slightly on hover */
+
 }
 
 
 
-  .content {
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-   
-   
-  }
-  .Content .title{
-    padding-top: 4rem;
-    padding-left: 10rem;
-    color: rgb(209, 207, 207);
-    
-  }
-  h1 {
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-    transform: scale(1);
-    font-size: 4rem;
-    margin-bottom: 10px;
-    animation: fadeInDown 1s ease-in-out; /* Apply animation */
-  }
-  
-  h2 {
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-    transform: scale(1);
-    font-size: 2.5rem;
-    margin-top: 1rem;
-    margin-bottom: 10px;
-    animation: fadeInUp 1s ease-in-out; /* Apply animation */
-  }
-  
-  p {
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-    transform: scale(1);
-    
-    max-width: 40%;
-    animation: fadeIn 1s ease-in-out; /* Apply animation */
-  }
+.content {
  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes fadeInDown {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  
-
-  .logo img {
-    width: 100%;
-    height: 300px;
-    border-radius: 50%;
-    margin-top: 3rem;
-    opacity: 0.7;
-    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.3);
-    animation: fadeIn 1s ease-in-out;
-    transition: transform 0.3s ease; /* Add transition for smooth animation */
-  }
-  
-  .logo img:hover {
-    transform: scale(1.1); /* Apply scale transformation on hover */
-  }
-  .logo {
-    position: absolute; /* Position the logo absolutely within the header */
-    top: 130px;
-    right: 200px;
-  }
-
-  .comp{
-    width: 500px;
-    height: 500px;
-  }
-
- .know{
-
-
-  color:rgb(209, 207, 207); 
-  margin-top: 6rem;
-  margin-left: 3rem;
-  line-height: 3rem;
-  font-family: "eurostile", sans-serif;
- }
- .know span{
-  color:white;
-  font-size: larger;
-  font-family: "eurostile", sans-serif;
- }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
  
-  .sills {
+ 
+}
+.Content .title{
+  padding-top: 3rem;
+  padding-left: 10rem;
+  color: rgb(209, 207, 207);
+  
+}
+h1 {
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  transform: scale(1);
+  font-size: 4rem;
+  margin-bottom: 10px;
+  animation: fadeInDown 1s ease-in-out; /* Apply animation */
+}
+
+h2 {
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  transform: scale(1);
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 10px;
+  animation: fadeInUp 1s ease-in-out; /* Apply animation */
+}
+
+p {
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  transform: scale(1);
+  
+  max-width: 40%;
+  animation: fadeIn 1s ease-in-out; /* Apply animation */
+}
+@keyframes fade {
+  0% {
     
-
-    margin: 0;
-    display: flex;
-    margin-top: 14rem;
-    background-color: #333; /* Dark color for the background */
-    color: white; /* White text color for better contrast */
-    padding: 20px;
-    /* A /* Add some padding for spacing */
+    transform: translatex(100);
   }
+  100% {
+    
+    transform: translatex(-100%);
+  }
+}
 
- .banner{
-  height: 500px;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translatex(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translatex(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translatex(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translatex(0);
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo img {
+  width: 100%;
+  height: 300px;
+  border-radius: 50%;
+
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.3);
+  animation: fadeout 1s ease-in-out;
+  transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.logo img:hover {
+  transform: scale(1.1); /* Apply scale transformation on hover */
+}
+.logo {
+  position: absolute; /* Position the logo absolutely within the header */
+  top: 130px;
+  right: 200px;
+}
+
+.comp{
   width: 500px;
- }
-  .imag{
-    
-    margin-left: 3rem;
-    transition: transform 0.3s ease;
-   
-  }
-  .imag:hover{
-    transform: scale(1.1);
-  }
-  /* Header.css */
-/* Header.css */
-.know li {
-  
-  animation: fadeInDown 1s ease-in-out;
-  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-  transform: scale(1); /* Default state with no scaling */
-   /* Default text color */
+  height: 500px;
 }
 
-.know li:hover {
-  transform: scale(1.05); /* Scale up the text slightly on hover */
-  color: #555; /* Change color on hover */
-}
+.know{
 
-.know h2 {
-  animation: fadeIn 1s ease-in-out;
-  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-  transform: scale(1); /* Default state with no scaling */
- 
-}
 
-.know h2:hover {
-  transform: scale(1.05); /* Scale up the text slightly on hover */
-  color: #555; /* Change color on hover */
+color:rgb(209, 207, 207); 
+margin-top: 6rem;
+margin-left: 3rem;
+line-height: 3rem;
+font-family: "eurostile", sans-serif;
+}
+.know span{
+color:white;
+font-size: larger;
+font-family: "eurostile", sans-serif;
 }
 
 .sills {
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  
 
-  transform: scale(1); /* Default state with no scaling */
-  box-shadow: none; /* No shadow by default */
+  margin: 0;
+  display: flex;
+  margin-top: 14rem;
+  background-color: #333; /* Dark color for the background */
+  color: white; /* White text color for better contrast */
+  padding: 20px;
+  /* A /* Add some padding for spacing */
+}
+
+.banner{
+height: 500px;
+width: 500px;
+}
+.imag{
+  
+  margin-left: 3rem;
+  transition: transform 0.3s ease;
+ 
+}
+.imag:hover{
+  transform: scale(1.1);
+}
+/* Header.css */
+/* Header.css */
+.know li {
+
+animation: fadeInDown 1s ease-in-out;
+transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+transform: scale(1); /* Default state with no scaling */
+ /* Default text color */
+}
+
+.know li:hover {
+transform: scale(1.05); /* Scale up the text slightly on hover */
+color: #555; /* Change color on hover */
+}
+
+.know h2 {
+animation: fadeIn 1s ease-in-out;
+transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+transform: scale(1); /* Default state with no scaling */
+
+}
+
+.know h2:hover {
+transform: scale(1.05); /* Scale up the text slightly on hover */
+color: #555; /* Change color on hover */
+}
+
+.sills {
+transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+transform: scale(1); /* Default state with no scaling */
+box-shadow: none; /* No shadow by default */
 }
 
 .sills:hover {
-  transform: scale(1.03); /* Scale up the section slightly on hover */
- 
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+transform: scale(1.03); /* Scale up the section slightly on hover */
+
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
 
 .project {
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
 
-  transform: scale(1); /* Default state with no scaling */
-  box-shadow: none; /* No shadow by default */
+transform: scale(1); /* Default state with no scaling */
+box-shadow: none; /* No shadow by default */
 }
 
 .project:hover {
-  transform: scale(1.03); /* Scale up the section slightly on hover */
- 
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+transform: scale(1.03); /* Scale up the section slightly on hover */
+
+ /* Add shadow for depth */
 }
- 
+
 
 .project h2{
-  font-family: "Bebas Neue", sans-serif;
-  margin-top: 4rem;
-  color: rgb(209, 207, 207); 
-  margin-bottom: 4rem;
- 
+font-family: "Bebas Neue", sans-serif;
+margin-top: 4rem;
+color: rgb(209, 207, 207); 
+margin-bottom: 4rem;
+
 }
 /* Header.css */
 
 .project {
-  /* Add styles for the project section */
+/* Add styles for the project section */
 }
 
 .pro {
-  display: flex;
-  justify-content: center;
-  gap: 60px;
+display: flex;
+justify-content: center;
+gap: 60px;
 }
 
 .project-box {
-  background-color:#333; /* Background color */
-  padding: 20px; /* Padding */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 118px rgba(0, 0, 0, 0.1); /* Shadow effect */
-  width: 250px; /* Adjust width as needed */
-  height: 350px;
-   /* Border style */
-   border-radius: 8px; /* Rounded corners */
-   text-align: center;
-   margin-bottom: 4rem;
+background-color:#333; /* Background color */
+padding: 20px; /* Padding */
+border-radius: 10px; /* Rounded corners */
+box-shadow: 0 4px 40px rgba(0, 0, 0, 0.5);
+/* Shadow effect */
+width: 250px; /* Adjust width as needed */
+height: 350px;
+ /* Border style */
+ border-radius: 8px; /* Rounded corners */
+ text-align: center;
+ margin-bottom: 4rem;
 }
 
 .del {
-  width: 70%;
-  height: 50%; /* Adjust image width to fit container */
-  border-radius: 8px; /* Rounded corners for the image */
+width: 70%;
+height: 50%; /* Adjust image width to fit container */
+border-radius: 8px; /* Rounded corners for the image */
 }
 .del2 {
-  width: 100%;
-  height: 50%; /* Adjust image width to fit container */
-  border-radius: 8px; /* Rounded corners for the image */
+width: 100%;
+height: 50%; /* Adjust image width to fit container */
+border-radius: 8px; /* Rounded corners for the image */
 }
 .del3 {
-  width: 100%;
-  height: 50%; /* Adjust image width to fit container */
-  border-radius: 8px; /* Rounded corners for the image */
+width: 100%;
+height: 50%; /* Adjust image width to fit container */
+border-radius: 8px; /* Rounded corners for the image */
 }
 .project-box h4 ,h3{
-  
-  color:rgb(209, 207, 207); 
-  font-size: 12px;
-  width: 100%;
-  text-align: center;
+
+color:rgb(209, 207, 207); 
+font-size: 12px;
+width: 100%;
+text-align: center;
 }
 
 
 
 .technology-box {
-  /* Styles for the box containing each technology */
-  display: inline-block;
-  background-color:transparent; 
-  border: 1px solid white;
-  
- /* Background color */
-  padding: 5px 9.5px; /* Padding */
-  margin-right: 10px; /* Right margin to create space between boxes */
-  margin-bottom: 10px; /* Bottom margin to create space between rows */
-  border-radius: 5px; 
- 
-  
- 
-  /* Rounded corners */
+/* Styles for the box containing each technology */
+display: inline-block;
+background-color:transparent; 
+border: 1px solid white;
+
+/* Background color */
+padding: 5px 9.5px; /* Padding */
+margin-right: 10px; /* Right margin to create space between boxes */
+margin-bottom: 10px; /* Bottom margin to create space between rows */
+border-radius: 5px; 
+
+
+
+/* Rounded corners */
 }
 
 .technology-box p {
-  margin: 0; /* Remove default margin */
-  color:white; /* Text color */
-  font-size: 13px;
+margin: 0; /* Remove default margin */
+color:white; /* Text color */
+font-size: 13px;
 }
 .project-box:hover .technology-box{
-  border: 1px solid aqua;
- 
+border: 1px solid aqua;
+
 }
 .project-box:hover {
-  
-  transition: transform 0.5s ease-in-out;
-  transform: scale(1.1);
+
+transition: transform 0.5s ease-in-out;
+transform: scale(1.1);
 }
 
 
 .footer{
-  margin-top: 2rem;
-  background-color: #333;
-  height: 6rem;
-  padding-left: rem;
-  box-shadow: 0 4px 118px rgba(0, 0, 0, 0.5); 
+margin-top: 2rem;
+background-color: #333;
+height: 6rem;
+padding-left: rem;
+box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1); 
 }
 .footer-content  {
 
+color:rgb(209, 207, 207); 
+text-align: center;
+margin-bottom: .9rem;
+
+
+}
+.footer-content p  {
+padding: .9rem;
   color:rgb(209, 207, 207); 
   text-align: center;
-  margin-bottom: .9rem;
+  margin-left: 25rem;
   
   
 }
-.footer-content p  {
-  padding: .9rem;
-    color:rgb(209, 207, 207); 
-    text-align: center;
-    margin-left: 25rem;
-    
-    
-  }
 
 
- 
+
 
 .footer-content a{
-  margin-left: 1rem;
-  margin-bottom: 2rem;
-  color: rgb(151, 147, 147);
-  
+margin-left: 1rem;
+margin-bottom: 2rem;
+color: rgb(151, 147, 147);
+
 }
 .footer-content i:hover{
 transition: transform 0,3s ease;
@@ -364,214 +419,233 @@ color: white;
 
 
 
-  @media screen and (max-width: 700px) {
-    .header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .logo {
-        position: static;
-        align-items: center; /* Reset logo position for mobile */
-         /* Add some space below the logo */
-    }
-
-    .logo img{
-      position:absolute;
-      height: 200px;
-      width:200px;
-      margin-left: 6rem;
-      margin-top: 1rem;
-      margin-bottom: 5rem;
-    }
-   
-
-    h1 {
-      margin-top: 13.9rem;
-      font-size: 2.5rem;
-      margin-bottom: 10px;
+@media screen and (max-width: 700px) {
+  .header {
+      flex-direction: column;
+      align-items: center;
       text-align: center;
-      animation: fadeInDown 1s ease-in-out; /* Apply animation */
-    }
-    
-    h2 {
-      font-size: 1.5rem;
-      text-align: center;
-      margin-top: 1rem;
-      margin-bottom: 10px;
-      animation: fadeInUp 1s ease-in-out; /* Apply animation */
-    }
-    
-    p {
-      font-size: 14px;
-      margin-left: 3rem;
-      max-width: 78%;
+  }
+
+
+.slide{
+  display: none;
+}
+
+
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.5rem;
+    margin-left: 4rem;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+  .logo {
+      position: static;
+      align-items: center; /* Reset logo position for mobile */
+       /* Add some space below the logo */
+  }
+
+  .logo img{
+    position:absolute;
+    height: 200px;
+    width:200px;
+    margin-left: 6.1rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+  }
+ 
+
+  h1 {
+    margin-top: 13.9rem;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
     text-align: center;
-      animation: fadeIn 1s ease-in-out; /* Apply animation */
-    }
-    .Content .title{
-      padding-top: 1rem;
-      padding-left: 0rem;
-      color: rgb(209, 207, 207);
-      
-    }
-    .span{
-      display: none;
-    }
-
-  .imag{
+    animation: fadeInDown 1s ease-in-out; /* Apply animation */
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 10px;
+    animation: fadeInUp 1s ease-in-out; /* Apply animation */
+  }
+  
+  p {
+    font-size: 14px;
+    margin-left: 3rem;
+    max-width: 78%;
+  text-align: center;
+    animation: fadeIn 1s ease-in-out; /* Apply animation */
+  }
+  .Content .title{
+    padding-top: 1rem;
+    padding-left: 0rem;
+    color: rgb(209, 207, 207);
+    
+  }
+  .span{
     display: none;
   }
 
-  .know{
-    color:rgb(209, 207, 207); 
-    margin-top: .1rem;
-    margin-left: .1rem;
-    line-height: 2rem;
-    font-size: 9px;
-   }
-   .know span{
-    color:white;
-    font-size: larger;
-   }
+.imag{
+  display: none;
+}
 
-   .know li {
-  
+.know{
+  color:rgb(209, 207, 207); 
+  margin-top: .1rem;
+  margin-left: .1rem;
+  line-height: 2rem;
+  font-size: 9px;
+ }
+ .know span{
+  color:white;
+  font-size: larger;
+ }
 
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-    transform: scale(1); /* Default state with no scaling */
-     /* Default text color */
+ .know li {
+
+
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  transform: scale(1); /* Default state with no scaling */
+   /* Default text color */
+}
+
+.know li:hover {
+  transform: scale(1.05); /* Scale up the text slightly on hover */
+  color: #faf7f7; /* Change color on hover */
+}
+
+
+  .sills {
+    position: relative;
+    background-image: url('./4882404-removebg.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
-  
-  .know li:hover {
-    transform: scale(1.05); /* Scale up the text slightly on hover */
-    color: #faf7f7; /* Change color on hover */
-  }
 
   
-    .sills {
-      position: relative;
-      background-image: url('./4882404-removebg.png');
-      background-size:contain;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-  
-    
-    .imag {
-     
-      display: none; /* Hide the existing image */
-    }
-  
-    .sills::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(56, 53, 53, 0.7); /* dim effect */
-      z-index: 0;
-    }
-  
-  
+  .imag {
    
-    .sills {
-      margin: 0;
-      display: flex;
-      margin-top: 4rem;
-      background-color: #333; /* Dark color for the background */
-      color: white; /* White text color for better contrast */
-      padding: 20px;
-      /* A /* Add some padding for spacing */
-    }
-    .know h2{
-      margin-left: 1.7rem;
-    }
+    display: none; /* Hide the existing image */
+  }
 
-    .pro {
-      display:grid;
-      justify-content: center;
-      gap: 10px;
-    }
+  .sills::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(56, 53, 53, 0.7); /* dim effect */
+    z-index: 0;
+  }
 
-    .technology-box {
-      padding: 5px 10px; /* Reduced padding */
-      margin-right: 5px; /* Reduced right margin */
-      margin-bottom: 5px; /* Reduced bottom margin */
-      margin-top: 0.01rem; /* Reduced top margin */
-    }
 
-    .technology-box p{
-      font-size: 10px;
-    }
+ 
+  .sills {
+    margin: 0;
+    display: flex;
+    margin-top: 4rem;
+    background-color: #333; /* Dark color for the background */
+    color: white; /* White text color for better contrast */
+    padding: 20px;
+    /* A /* Add some padding for spacing */
+  }
+  .know h2{
+    margin-left: 1.7rem;
+  }
 
-    .project-box {
-      background-color:#333; /* Background color */
-      padding: 20px; /* Padding */
-      border-radius: 10px; /* Rounded corners */
-      box-shadow: 0 4px 118px rgba(0, 0, 0, 0.1); /* Shadow effect */
-      width: 300px; /* Adjust width as needed */
-      height: 285px;
-       /* Border style */
-       border-radius: 8px; /* Rounded corners */
-       text-align: center;
-       margin-bottom: 4rem;
-    }
-    .project-box h4 {
-      color:rgb(209, 207, 207); 
-      font-size: 9.5px;
-      width: 100%;
-      text-align: center;
-    }
-    .project h2{
-      margin-bottom: 2rem;
-      text-align: center;
-    }
+  .pro {
+    display:grid;
+    justify-content: center;
+    gap: 10px;
+  }
 
-    
+  .technology-box {
+    padding: 5px 10px; /* Reduced padding */
+    margin-right: 5px; /* Reduced right margin */
+    margin-bottom: 5px; /* Reduced bottom margin */
+    margin-top: 0.01rem; /* Reduced top margin */
+  }
+
+  .technology-box p{
+    font-size: 10px;
+  }
+
+  .project-box {
+    background-color:#333; /* Background color */
+    padding: 20px; /* Padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 118px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    width: 300px; /* Adjust width as needed */
+    height: 285px;
+     /* Border style */
+     border-radius: 8px; /* Rounded corners */
+     text-align: center;
+     margin-bottom: 4rem;
+  }
+  .project-box h4 {
+    color:rgb(209, 207, 207); 
+    font-size: 9.5px;
+    width: 100%;
+    text-align: center;
+  }
+  .project h2{
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  
 .del {
-  width: 65%;
-  height: 54%; /* Adjust image width to fit container */
-  border-radius: 8px; /* Rounded corners for the image */
+width: 65%;
+height: 54%; /* Adjust image width to fit container */
+border-radius: 8px; /* Rounded corners for the image */
 }
 .del2 {
-  width: 80%;
-  height: 50%; /* Adjust image width to fit container */
-  border-radius: 8px; /* Rounded corners for the image */
+width: 80%;
+height: 50%; /* Adjust image width to fit container */
+border-radius: 8px; /* Rounded corners for the image */
 }
 .del3 {
-  width: 100%;
-  height: 50%; /* Adjust image width to fit container */
-  border-radius: 8px; /* Rounded corners for the image */
+width: 100%;
+height: 50%; /* Adjust image width to fit container */
+border-radius: 8px; /* Rounded corners for the image */
 }
 
 .footer{
-  margin-top: 2rem;
-  background-color: #333;
-  height: 6rem;
-  padding-left: rem;
+margin-top: 2rem;
+background-color: #333;
+height: 6rem;
+padding-left: rem;
 }
 .footer-content i {
-  
-  color:rgb(209, 207, 207); 
-  align-items: center;
-  margin-bottom: .9rem;
-  margin-right: .5rem;
-  
-  
+
+color:rgb(209, 207, 207); 
+align-items: center;
+margin-bottom: .9rem;
+margin-right: 1rem;
+
+
 }
 .footer-content p  {
-  padding: .9rem;
-    color:rgb(209, 207, 207); 
-    text-align: center;
-    margin-left: 1.9rem;
-    
-    
-  }
+padding: .9rem;
+  color:rgb(209, 207, 207); 
+  text-align: center;
+  margin-left: 2rem;
+  
   
 }
 
- 
+}
 
+
+
+@media screen and (min-width: 805px) {
+
+
+
+}
